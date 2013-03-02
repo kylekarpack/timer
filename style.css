@@ -1,0 +1,139 @@
+@font-face {
+	font-family: neutraface-bold;
+	src: url('http://students.washington.edu/kkarpack/timer/neutrabold.TTF');
+}
+
+@font-face {
+	font-family: neutraface;
+	src: url('http://students.washington.edu/kkarpack/timer/neutrademi.TTF');
+}
+
+::selection {
+	background:#fff;
+}
+
+body {
+	padding:0;
+	margin:0;
+	background-color:#333;
+	color:#AE956B;
+	text-align:center;
+	font-family:neutraface;
+}
+
+#main {
+	margin:0 auto;
+	width:98%;
+	font-size:400px;
+	line-height:.6;
+	margin-bottom:100px;
+	font-family:neutraface-bold;
+	text-shadow:0 0 5px #222;
+	cursor:default;
+}
+
+img {
+	width:300px;
+	clear:both;	
+}
+
+.image {
+	position:fixed;
+}
+
+h1 {
+	margin:0px;	
+	max-width:70%;
+	margin:0 auto;
+	max-height:100px;
+}
+
+.timer {
+	display:inline;	
+}
+
+.button {
+	color:#fff;
+	border:none;
+	font-family:neutraface;
+	font-size:32px;
+	background:#AE956B;
+	padding:1% 4%;
+	margin:10px;
+	cursor:pointer;
+	-webkit-transition:.15s background ease-in-out, box-shadow .15s ease-in-out;
+	transition:.15s background ease-in-out, box-shadow .15s ease-in-out;
+	max-width:20%;
+	box-shadow:0 0 20px rgb(45,45,45);
+	text-shadow:0 0 5px rgba(45,45,45,.4);
+}
+
+.button:hover {
+	background:#837050;
+	box-shadow:0 0 20px rgba(45,45,45,.5);
+}
+
+.button[disabled] {
+	background:#D9CFB0;
+	color:#E8E4CA;
+	cursor:default;
+	box-shadow:none;
+}
+
+#util {
+	min-width:150px;
+	width:15%;
+	background:rgba(255,255,255,.95);
+	box-shadow:0 0 15px #222;
+	position:fixed;
+	z-index:999;
+	top:50%;
+	margin-top:-150px;
+	display:none;
+	padding:1% 2%;
+}
+
+#util button {
+	margin: 2px 2px 10px;
+	padding:5px 15px;
+}
+
+#util h2 {
+	color:#2d2d2d;
+	margin:0 0 10px;
+}
+
+#util p {
+	position:absolute;
+	right:2px;
+	top:2px;
+	padding:6px 15px;
+	background:#2d2d2d;
+	color:#fff;
+	font-size:20px;
+	cursor:pointer;
+	margin:0;
+}
+
+#util .head {
+	width:100%;
+	padding:1% 0;
+	margin:0 0 1%;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	display:block;
+}
+
+#utilTab {
+	position:fixed;
+	z-index:9999;
+	width:35px;
+	height:125px;
+	box-shadow:0 0 5px #555;
+	background:url(settings.png) #000 center center no-repeat;
+	border-bottom-right-radius:4px;
+	border-top-right-radius:4px;
+	cursor:pointer;
+	top:50%;
+	margin-top:-75px;
+}
